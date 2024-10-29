@@ -3,21 +3,12 @@ package ru.zharinov.easy_level.task21;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+https://leetcode.com/problems/merge-two-sorted-lists/
+*/
+
 public class MergeTwoSortedLists {
-    public static void main(String[] args) {
-        ListNode list1;
-        ListNode list2;
-
-        list1 = new ListNode(1, null);
-        list1.next = new ListNode(2, new ListNode(4, null));
-
-        list2 = new ListNode(1, null);
-        list2.next = new ListNode(3, new ListNode(4, null));
-
-        System.out.println(mergeTwoLists(list1, list2));
-    }
-
-    public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         List<Integer> list = new ArrayList<>();
         ListNode result = null;
         ListNode last = null;
@@ -37,7 +28,7 @@ public class MergeTwoSortedLists {
         return result;
     }
 
-    private static void addAll(ListNode listNode, List<Integer> list) {
+    private  void addAll(ListNode listNode, List<Integer> list) {
         while (listNode != null) {
             list.add(listNode.val);
             listNode = listNode.next;
