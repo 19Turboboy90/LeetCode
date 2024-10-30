@@ -1,4 +1,4 @@
-package ru.zharinov.easy_level.task;
+package ru.zharinov.easy_level.task26;
 
 import java.util.*;
 
