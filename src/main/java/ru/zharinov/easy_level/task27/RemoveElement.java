@@ -1,7 +1,5 @@
 package ru.zharinov.easy_level.task27;
 
-import java.util.*;
-
 /*
 https://leetcode.com/problems/remove-element/
  */
